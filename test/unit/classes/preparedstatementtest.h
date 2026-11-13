@@ -86,6 +86,7 @@ public:
     TEST_CASE(concpp153_mbCsParamEscaping);
     TEST_CASE(concpp172_failedBatch);
     TEST_CASE(concpp172_executeAfterFailedBatch);
+    TEST_CASE(rewriteParsedQueries);
   }
 
   /**
@@ -194,6 +195,7 @@ public:
 
   void concpp138_useRsAfterConClose();
   void storedRsLazyCaching();
+  void rewriteParsedQueries();
 
   void concpp153_mbCsParamEscaping();
 
