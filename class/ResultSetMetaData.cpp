@@ -41,16 +41,6 @@ namespace mariadb
     }
   }
 
-  /**
-    * Returns the number of columns in this <code>ResultSet</code> object.
-    *
-    * @return the number of columns
-    */
-  uint32_t ResultSetMetaData::getColumnCount()
-  {
-    return static_cast<uint32_t>(field.size());
-  }
-
  #ifndef LEAVING_THIS_SO_FAR_HERE_COMMENTED
   /**
     * Indicates whether the designated column is automatically numbered.

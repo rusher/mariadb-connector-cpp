@@ -43,7 +43,7 @@ public:
   const MYSQL_FIELD* getField(std::size_t columnIdx) const {
     return field[columnIdx].getColumnRawData();
   }
-  uint32_t getColumnCount();
+  uint32_t getColumnCount() { return static_cast<uint32_t>(field.size()); }
 
   bool isAutoIncrement(uint32_t column) const;
   bool isCaseSensitive(uint32_t column) const;
